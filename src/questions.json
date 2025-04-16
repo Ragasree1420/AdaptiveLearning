@@ -1,0 +1,82 @@
+{
+    "level1": {
+      "math": [
+      { "question": "What is 2 + 3?", "options": ["4", "5", "6"], "answer": "5" },
+      { "question": "What is 10 - 4?", "options": ["6", "7", "8"], "answer": "6" },
+      { "question": "What is 3 × 4?", "options": ["10", "12", "14"], "answer": "12" },
+      { "question": "What is half of 50?", "options": ["20", "25", "30"], "answer": "25" },
+      { "question": "How many sides does a triangle have?", "options": ["3", "4", "5"], "answer": "3" },
+      { "question": "What is 9 ÷ 3?", "options": ["2", "3", "4"], "answer": "3" },
+      { "question": "What is 7 + 5?", "options": ["11", "12", "13"], "answer": "12" },
+      { "question": "What is the square of 5?", "options": ["20", "25", "30"], "answer": "25" },
+      { "question": "What is 15 × 2?", "options": ["25", "30", "35"], "answer": "30" },
+      { "question": "What is the next even number after 8?", "options": ["9", "10", "11"], "answer": "10" }
+      ],
+      "science": [
+      { "question": "What planet do we live on?", "options": ["Mars", "Venus", "Earth"], "answer": "Earth" },
+      { "question": "What gas do humans need to breathe?", "options": ["Carbon Dioxide", "Oxygen", "Nitrogen"], "answer": "Oxygen" },
+      { "question": "What is H₂O more commonly known as?", "options": ["Salt", "Water", "Oxygen"], "answer": "Water" },
+      { "question": "What does the Sun provide to Earth?", "options": ["Water", "Light", "Food"], "answer": "Light" },
+      { "question": "How many legs does an insect have?", "options": ["4", "6", "8"], "answer": "6" },
+      { "question": "What is the largest planet in our solar system?", "options": ["Earth", "Jupiter", "Saturn"], "answer": "Jupiter" },
+      { "question": "What is the process by which plants make their food?", "options": ["Photosynthesis", "Respiration", "Digestion"], "answer": "Photosynthesis" },
+      { "question": "What part of the body pumps blood?", "options": ["Liver", "Brain", "Heart"], "answer": "Heart" },
+      { "question": "What is the force that pulls objects towards the Earth?", "options": ["Friction", "Magnetism", "Gravity"], "answer": "Gravity" },
+      { "question": "Which organ helps us breathe?", "options": ["Heart", "Lungs", "Liver"], "answer": "Lungs" }
+    ]
+   
+    },
+    "level2": {
+      "math": [
+      { "question": "Solve for x: 2x + 5 = 15", "options": ["4", "5", "6"], "answer": "5" },
+      { "question": "What is 20% of 200?", "options": ["30", "40", "50"], "answer": "40" },
+      { "question": "What is the perimeter of a rectangle with length 10 and width 5?", "options": ["20", "25", "30"], "answer": "30" },
+      { "question": "What is the cube of 3?", "options": ["9", "18", "27"], "answer": "27" },
+      { "question": "How many degrees are in a right angle?", "options": ["90", "180", "360"], "answer": "90" },
+      { "question": "What is 8 squared?", "options": ["56", "64", "72"], "answer": "64" },
+      { "question": "Solve for x: 5x = 25", "options": ["4", "5", "6"], "answer": "5" },
+      { "question": "What is the area of a square with side length 7?", "options": ["42", "49", "56"], "answer": "49" },
+      { "question": "What is 144 ÷ 12?", "options": ["10", "12", "14"], "answer": "12" },
+      { "question": "What is the next prime number after 11?", "options": ["12", "13", "14"], "answer": "13" }
+    ],
+    "science": [
+      { "question": "What is the chemical symbol for gold?", "options": ["Ag", "Au", "Pb"], "answer": "Au" },
+      { "question": "What is the powerhouse of the cell?", "options": ["Nucleus", "Mitochondria", "Ribosome"], "answer": "Mitochondria" },
+      { "question": "What is the hardest natural substance on Earth?", "options": ["Iron", "Diamond", "Quartz"], "answer": "Diamond" },
+      { "question": "Which planet is known as the Red Planet?", "options": ["Venus", "Mars", "Saturn"], "answer": "Mars" },
+      { "question": "What part of the plant absorbs water?", "options": ["Leaves", "Roots", "Stem"], "answer": "Roots" },
+      { "question": "What type of energy is produced by moving water?", "options": ["Solar", "Hydroelectric", "Nuclear"], "answer": "Hydroelectric" },
+      { "question": "What gas do plants release during photosynthesis?", "options": ["Oxygen", "Carbon Dioxide", "Nitrogen"], "answer": "Oxygen" },
+      { "question": "How many bones are in the adult human body?", "options": ["206", "208", "210"], "answer": "206" },
+      { "question": "What is the boiling point of water in Celsius?", "options": ["90°C", "100°C", "110°C"], "answer": "100°C" },
+      { "question": "Which blood cells help fight infection?", "options": ["Red blood cells", "White blood cells", "Platelets"], "answer": "White blood cells" }
+    ]
+    },
+    "level3": {
+      "math": [
+      { "question": "Solve for x: 3x² - 12 = 0", "options": ["2", "3", "4"], "answer": "2" },
+      { "question": "What is the square root of 225?", "options": ["13", "14", "15"], "answer": "15" },
+      { "question": "What is the derivative of x²?", "options": ["x", "2x", "x²"], "answer": "2x" },
+      { "question": "What is the integral of 4x?", "options": ["4x²", "2x²", "x²"], "answer": "2x²" },
+      { "question": "Solve for x: log₂(32) = x", "options": ["4", "5", "6"], "answer": "5" },
+      { "question": "What is the value of π (pi) to two decimal places?", "options": ["3.12", "3.14", "3.16"], "answer": "3.14" },
+      { "question": "What is the sum of the interior angles of a hexagon?", "options": ["540°", "720°", "900°"], "answer": "720°" },
+      { "question": "What is the probability of rolling a 6 on a fair die?", "options": ["1/3", "1/6", "1/2"], "answer": "1/6" },
+      { "question": "What is the limit of (x² - 4)/(x - 2) as x approaches 2?", "options": ["0", "2", "4"], "answer": "4" },
+      { "question": "Find the derivative of sin(x).", "options": ["cos(x)", "-cos(x)", "-sin(x)"], "answer": "cos(x)" }
+    ],
+    "science": [
+      { "question": "What is the scientific name for humans?", "options": ["Homo erectus", "Homo sapiens", "Homo neanderthalensis"], "answer": "Homo sapiens" },
+      { "question": "Which element has the highest atomic number?", "options": ["Uranium", "Oganesson", "Plutonium"], "answer": "Oganesson" },
+      { "question": "What is the second law of thermodynamics?", "options": ["Energy cannot be created or destroyed", "Entropy of a system always increases", "For every action, there is an equal reaction"], "answer": "Entropy of a system always increases" },
+      { "question": "What type of bond is formed when atoms share electrons?", "options": ["Ionic", "Covalent", "Metallic"], "answer": "Covalent" },
+      { "question": "Which planet has the most moons?", "options": ["Saturn", "Jupiter", "Uranus"], "answer": "Saturn" },
+      { "question": "What is the heaviest naturally occurring element?", "options": ["Lead", "Uranium", "Plutonium"], "answer": "Uranium" },
+      { "question": "What is the name of the effect where light bends around an object?", "options": ["Reflection", "Refraction", "Diffraction"], "answer": "Diffraction" },
+      { "question": "What is the process of splitting an atomic nucleus called?", "options": ["Fusion", "Fission", "Radioactivity"], "answer": "Fission" },
+      { "question": "Which scientist developed the theory of relativity?", "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei"], "answer": "Albert Einstein" },
+      { "question": "What is the main component of the Sun?", "options": ["Oxygen", "Hydrogen", "Carbon"], "answer": "Hydrogen" }
+    ]
+    }
+  }
+  

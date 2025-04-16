@@ -1,0 +1,176 @@
+/* AdaptiveQuiz.css */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #8B5E3C;
+  margin: 0;
+  padding: 0;
+}
+.quiz-background {
+  background-color: #8B5E3C;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-container {
+  background: #8CA1D2;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.topic-button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #FFB997;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.topic-button:hover {
+  background: #FF9A76;
+  color: white;
+}
+
+.topic-button:focus {
+  outline: none;
+}
+
+  .option-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .option-button:hover {
+    background-color: #dbeafe;
+  }
+  
+  .option-button.selected {
+    background-color: #2563eb;
+    color: white;
+    border: 2px solid #1d4ed8;
+  }
+  
+  .next-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #16a34a;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  .next-button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .feedback-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .feedback-buttons button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .happy {
+    background-color: #34d399;
+  }
+  
+  .neutral {
+    background-color: #facc15;
+  }
+  
+  .angry {
+    background-color: #ef4444;
+  }
+  
+  .feedback-buttons button:hover {
+    opacity: 0.8;
+  }
+  
+  .level-message {
+    font-size: 16px;
+    color: #1e40af;
+    margin-top: 10px;
+  }
+  
+  .go-button {
+    padding: 10px 15px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  .go-button:hover {
+    background-color: #1e40af;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background-color: #3b82f6;
+    margin-top: 15px;
+    border-radius: 4px;
+  }
+  .exit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+  }
+  
+  .exit-button:hover {
+    color: darkred;
+  }
+  
+  
