@@ -1,7 +1,8 @@
+//Imports and Component Setup
 import React, { useState, useEffect } from "react";
 import "./AdaptiveQuizz1.css";
 import axios from 'axios';
-
+//State Variables
 function AdaptiveQuizz1() {
   const [level, setLevel] = useState("level2");
   const [topic, setTopic] = useState(null);
@@ -59,19 +60,24 @@ function AdaptiveQuizz1() {
   };
 
   // Handle feedback after quiz completion
+  // const handleFeedback = (feedback) => {
+  //   setFeedBack(feedback);
+  //   if (score >= 3 && feedback === "happy" && level !== "level3") {
+  //     setLevel("level3");
+  //     setLevelMessage("Congratulations! Moving to Level 3");
+  //   } else if (score < 3 && (feedback === "neutral" || feedback === "happy")) {
+  //     setLevelMessage("Stay on your current level. Keep improving!");
+  //   } else if (score < 3 && feedback === "angry" && level !== "level1") {
+  //     setLevel("level1");
+  //     setLevelMessage("Moving down to Level 1. Try again!");
+  //   }
+  //   setShowGoButton(true);
+  // };
   const handleFeedback = (feedback) => {
     setFeedBack(feedback);
-    if (score >= 3 && feedback === "happy" && level !== "level3") {
-      setLevel("level3");
-      setLevelMessage("Congratulations! Moving to Level 3");
-    } else if (score < 3 && (feedback === "neutral" || feedback === "happy")) {
-      setLevelMessage("Stay on your current level. Keep improving!");
-    } else if (score < 3 && feedback === "angry" && level !== "level1") {
-      setLevel("level1");
-      setLevelMessage("Moving down to Level 1. Try again!");
-    }
     setShowGoButton(true);
   };
+  
 
   // Reset topic and quiz state
   const resetTopicSelection = () => {
@@ -84,34 +90,43 @@ function AdaptiveQuizz1() {
   };
 
   // Handle the transition to the next level after feedback
-  const handleGoToNextLevel = () => {
+  const handleGoToNextLevel = async () => {
     setShowScore(false);
     setLevelMessage("");
     setShowGoButton(false);
     setCurrentQuestionIndex(0);
     setScore(0);
     setSelectedAnswer(null);
-
-    let nextLevel = level;
-
-    if (score >= 3 && feedback === "happy") {
-      if (level === "level1") nextLevel = "level2";
-      else if (level === "level2") nextLevel = "level3";
-    } else if (score < 3 && feedback === "angry") {
-      if (level === "level3") nextLevel = "level2";
-      else if (level === "level2") nextLevel = "level1";
+  
+    try {
+      const res = await axios.post("http://localhost:5000/api/agent/decide-level", {
+        score,
+        emotion: feedback,
+        level,
+      });
+  
+      const nextLevel = res.data.nextLevel;
+  
+      setLevel(nextLevel);
+      setLevelMessage(`You are now on ${nextLevel.toUpperCase()}`);
+  
+      // Load questions for next level
+      const response = await axios.get(`http://localhost:5000/api/questions/${nextLevel}/${topic}`);
+      setQuestions(shuffleArray(response.data).slice(0, 5));
+    } catch (err) {
+      console.error("Error fetching level from LLM agent:", err);
     }
-
-    setLevel(nextLevel);
-    
-    // Fetch questions for the next level
-    axios
-      .get(`http://localhost:5000/api/questions/${nextLevel}/${topic}`)
-      .then((res) => {
-        setQuestions(shuffleArray(res.data).slice(0, 5));
-      })
-      .catch((err) => console.error("Error fetching next level questions:", err));
   };
+  
+    
+  //   // Fetch questions for the next level
+  //   axios
+  //     .get(`http://localhost:5000/api/questions/${nextLevel}/${topic}`)
+  //     .then((res) => {
+  //       setQuestions(shuffleArray(res.data).slice(0, 5));
+  //     })
+  //     .catch((err) => console.error("Error fetching next level questions:", err));
+  // };
 
   return (
     <div className="quiz-background">
